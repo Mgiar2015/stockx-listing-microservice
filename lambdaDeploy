@@ -1,0 +1,8 @@
+#!/bin/bash
+
+zip -r function.zip lambda
+
+aws lambda delete-function --function-name "stockx-list"
+aws lambda create-function --function-name "stockx-list" \
+--zip-file fileb://function.zip --handler lambda/index.handler --runtime nodejs14.x \
+--role arn:aws:iam::583095042236:role/lambda-ex
