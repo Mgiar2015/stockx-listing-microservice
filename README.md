@@ -1,4 +1,4 @@
-StockX Listing Microservice Writeup
+##StockX Listing Microservice Writeup
 This project was fairly straightforward. This document will cover some of my design decisions. If you have any further questions about how I made specific decisions please let me know. Additionally, I would love any feedback on the quality of my code, and anywhere you see an area for improvements.
 Micro-Service:
 This layer of the application utilizes Express and Redis. I broke the code into a few folders, including routes and services. In order to call our lambda function, I utilized the aws-sdk.
